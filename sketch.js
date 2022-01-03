@@ -23,9 +23,9 @@ function setup() {
 	//Create the Bodies Here.
    PaperObject = new Paper (250,300,20);
    ground = new Ground (450,550,1850,10);
-   dustbin1 = new Dustbin(610,515,10,60);
-   dustbin3 = new Dustbin(670,515,10,60);
-   dustbin2 = new Dustbin(640,540,70,10);
+   dustbin1 = new Dustbin(590,515,10,60);
+   dustbin3 = new Dustbin(680,515,10,60);
+   dustbin2 = new Dustbin(640,540,90,10);
 
 	Engine.run(engine);
   
@@ -50,7 +50,7 @@ dustbin3.display();
 }
 function keyPressed(){
   if(keyCode=== UP_ARROW){
-    Matter.Body.applyForce(PaperObject.body,PaperObject.body.position,{x:12.5,y:-12.5});
+    Matter.Body.applyForce(PaperObject.body,PaperObject.body.position,{x:12.0,y:-12.5});
   }
 }
 
